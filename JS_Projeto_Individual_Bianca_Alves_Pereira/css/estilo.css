@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative; top: 80px;
+}
+
+p#cor_destaque{
+    color:red;
+    font-weight: 900;  
+    font-size: 16px;  
+}
+
+a.imagem{
+    position: fixed;
+    padding-left: 100px;
+    margin-top: -19px;
+}
+
+nav.menu{
+    background-color: red;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: -8px;
+    width: 100%;
+    position: fixed; top: -5px;
+}
+
+a.itensmenu{
+    color:white;
+    text-decoration: none;
+    font-size: 14px;
+    padding-right: 18%;
+    display: inline;  
+    position: relative; left:30%;
+}
+
+footer.rodape{
+    text-align: center;
+    font-size: 13px;
+}
+
+p#recodepro{
+    background-color: red;
+    color: white;
+    margin-left: -8px;
+    width: 100%;
+    position: fixed; bottom: -15px;
+}
+
+section.categorias{  
+    display: inline-block;
+    font-size: 14px;
+}
+
+section a{
+    text-decoration: none;
+    color: black;
+}
+
+section.tabela{
+    margin-left: 15%; 
+    margin-top:-170px;
+}
+
+div.itens{
+    display: inline-block;
+    font-size: 12.5px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    padding-top:40px; 
+    overflow: hidden; 
+    height: 295px;
+}
+
+p.informacoes_do_produto{
+    width:200px;
+}
+
+p.preco_antigo{
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+p.preco{
+    color:red;
+    font-size: 13.5px;
+    margin-top: -12px;
+}
+
+div.endereco1{
+    display: inline-block;
+    padding-left: 70px;
+}
+
+div.endereco2{
+    display: inline-block;
+    padding-left: 200px;
+}
+
+div.endereco3{
+    display: inline-block;
+    padding-left: 260px;
+}
+
+section.fale_conosco{
+    font-size: 110%;  
+}
+
+div.contato_l1c1{
+    margin-left: 15%;
+    padding-right: 35%;
+    display: inline-block;
+}
+
+div.contato_l1c2{
+    margin-right: 15%;
+    display: inline-block;
+}
