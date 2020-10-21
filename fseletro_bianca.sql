@@ -4,9 +4,9 @@ CREATE TABLE `fseletro`.`produto` (
   `idproduto` int NOT NULL AUTO_INCREMENT,
   `nome_produto` varchar(45) NOT NULL,
   `descricao` varchar(150) NOT NULL,
-  `preco_anterior` decimal(8,2) DEFAULT NULL,
-  `preco_atual` decimal(8,2) DEFAULT NULL,
-  `imagem` varchar(255) DEFAULT NULL,
+  `preco_anterior` decimal(8,2) NOT NULL,
+  `preco_atual` decimal(8,2) NOT NULL,
+  `imagem` varchar(255) NOT NULL,
   PRIMARY KEY (`idproduto`),
   UNIQUE KEY `imagem_UNIQUE` (`imagem`)
 );
