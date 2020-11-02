@@ -6,7 +6,7 @@
     </head>
 
     <body>
-        <h1>Consultar produtos</h1>
+        <h1> Consultar produtos </h1>
         <form method='post' name='consulta'>    
             Nome do produto: <br> 
             <select name="nome_produto">
