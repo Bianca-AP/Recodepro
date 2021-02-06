@@ -1,0 +1,3 @@
+export const CLICK_UPDATE_VALUE = 'CLICK_UPDATE_VALUE';
+export const FC_UPDATE_VALUE = 'FC_UPDATE_VALUE';
+
