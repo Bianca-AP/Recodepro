@@ -1,0 +1,56 @@
+<html lang='pt-br'>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" type="image/x-icon" href="/images/logo.ico">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="/styles/App.css">
+        <script type="text/javascript" src="funcoes.js"></script>
+        <title>Nossos produtos</title>
+    </head>
+    <header>
+        <%- include('../partials/menu.ejs') %>
+    </header>
+
+    <body>
+        <div class="container-fluid">
+            <h1>Nossos produtos</h1>
+            
+            <hr />
+            <h4>Categorias</h4>
+            
+            <nav class="nav">
+                <ul class="list-group">
+                    <li class="list-group-item border-0 p-1">
+                        <button class="list-group-item list-group-item-action border-0 p-1" href="#" onclick="exibir_todos()">Todos (12)</button>
+                    </li>
+                    <li class="list-group-item border-0 p-1">
+                        <button class="list-group-item list-group-item-action border-0 p-1" href="#" onclick="exibir_categorias('Geladeiras')">Geladeiras (3)</button>
+                    </li>
+                    <li class="list-group-item border-0 p-1">
+                        <button class="list-group-item list-group-item-action border-0 p-1" href="#" onclick="exibir_categorias('Fogões')">Fogões (2)</button>
+                    </li>
+                    <li class="list-group-item border-0 p-1">
+                        <button class="list-group-item list-group-item-action border-0 p-1" href="#" onclick="exibir_categorias('Micro-ondas')">Micro-ondas (3)</button>
+                    </li>
+                    <li class="list-group-item border-0 p-1"> 
+                        <button class="btn btn-sucess list-group-item list-group-item-action border-0 p-1" href="#" onclick="exibir_categorias('Lavadoras')">Lavadora de roupas (2)</button>
+                    </li>
+                    <li class="list-group-item border-0 p-1">
+                        <button class="list-group-item list-group-item-action border-0 p-1" href="#" onclick="exibir_categorias('Lava-louças')">Lava-louças (2)</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </body>
+    <div>
+        <%- include('bProdutos.ejs') %>
+    </div>
+    <footer>
+        <%- include('../partials/footer.ejs') %>
+    </footer>
+    
+</html>
+
+
+
+

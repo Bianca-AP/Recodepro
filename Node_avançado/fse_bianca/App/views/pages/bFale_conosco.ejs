@@ -1,0 +1,41 @@
+<html lang='pt-br'>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" type="image/x-icon" href="/images/logo.ico">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="/styles/App.css">  
+        <title>Mensagens</title>
+    </head>
+
+    <header>
+        <%- include('../partials/menu.ejs') %>
+    </header>
+   
+    <body>
+        <div class="container-fluid col-lg-4 mx-auto">
+            <h4>Buscar mensagem específica:</h4>
+            <form method="post" action='/buscarnome'>
+                Buscar por nome: <input type="text" name='nome' >
+                    <input type="submit" value="Pesquisar...">
+            </form>
+        </div>
+        <div class="container-fluid col-lg-8 mx-auto">
+            
+            <h3>Mensagens do site</h3>
+            <% for(i=0;i<dados.length;i++){ %>
+            <hr>
+            
+            <p><strong>Data:</strong> <%=dados[i].data %><br/>
+            <strong><%=dados[i].nome %> escreveu:</strong> 
+            <%=dados[i].mensagem %></p>
+            <hr>
+            <%}%>
+        </div>
+    </body>
+    
+    <footer>
+        <%- include('../partials/footer.ejs') %>
+    </footer>
+    
+</html>
+

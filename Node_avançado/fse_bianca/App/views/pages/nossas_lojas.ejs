@@ -1,0 +1,56 @@
+<html lang='pt-br'>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" type="image/x-icon" href="/images/logo.ico">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="/styles/App.css">
+        <script src="javascript/funcoes.js"></script>
+        <title>Nossas lojas</title>    
+    </head>
+    <header>
+        <%- include('../partials/menu.ejs') %>
+    </header>
+    
+    <body>
+        <div class="container-fluid" id='fale'>
+            
+            <h1>Nossas lojas</h1>
+           
+
+            <hr/>
+            <div class="container-fluid">             
+                <div class="row">
+                    <div class="col">
+                        <h3>Rio de Janeiro</h3>
+                        <p>Avenida Presidente Vargas, 5000</p>
+                        <p>10 &ordm; andar</p>
+                        <p>Centro</p>
+                        <p>(21) 3333-3333</p>
+                    </div>
+
+                    <div class="col">
+                        <h3>São Paulo</h3>
+                        <p>Avenida Paulista, 985</p>
+                        <p>3 &ordm; andar</p>
+                        <p>Jardins</p>
+                        <p>(21) 4444-4444</p>
+                    </div>
+
+                    <div class="col">
+                        <h3>Santa Catarina</h3>
+                        <p>Rua Major Ávila, 370</p>
+                        <p>Vila Mariana</p>
+                        <p>(47) 5555-5555</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    <footer>
+        <%- include('../partials/footer.ejs') %>
+    </footer>
+
+</html>
+
+

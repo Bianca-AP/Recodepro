@@ -1,0 +1,47 @@
+<html lang='pt-br'>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" type="image/x-icon" href="/images/logo.ico">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link  type="text/css" rel="stylesheet"href="/styles/App.css">
+        <script type="text/javascript" src="funcoes.js"></script>
+    </head>
+    
+    <body>  
+        <div>
+            <div class="container pl-5">
+                
+                <div class="celula">  
+                    <div class="row">
+                        <% for(i=0;i<dados.length;i++){ %>
+                            <div class="maxtamanho col-lg-3" key=<%=dados[i].idproduto %> id="<%=dados[i].categorias %>">
+                                <div class="col">
+                                    <img id="img" onmouseover="ampliar(this)" onmouseout="reduzir(this)" src="images/<%= dados[i].imagem %>" alt=<%=dados[i].nome_produto %> >
+                                </div> 
+                                <div class="col informacoes_do_produto">
+                                    <%=dados[i].descricao %>
+                                    <hr>
+                                </div>
+                                <div class="col preco_antigo">
+                                    R$<%=dados[i].preco_anterior %>
+                                </div>
+                                <div class="col preco">
+                                    R$<%=dados[i].preco_atual %>
+                                </div>
+                            </div>
+                        <%}%>  
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+{
+  "name": "fse_bianca",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.3",
+    "commonjs": "^0.0.1",
+    "consign": "^0.1.6",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.9.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon ./src/app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
