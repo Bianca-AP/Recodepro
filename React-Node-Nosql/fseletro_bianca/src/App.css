@@ -1,0 +1,46 @@
+p#cor_destaque{
+  color:red;
+  font-weight: 900;  
+  font-size: 16px;
+  padding-top:100px;  
+}
+
+p#recodepro{
+  position: fixed; bottom: -17px;
+}
+
+.form-group-sm{
+  padding-top: 30px;
+}
+
+.itens{
+  font-size: 11.5px;
+  text-align: center;
+  overflow: hidden; 
+  height: 295px;
+}
+
+div.container{
+  margin-top:-200px;
+  margin-left:180px;
+}
+
+p.informacoes_do_produto{
+  width:200px;
+}
+
+p.preco_antigo{
+  text-decoration: line-through;
+  font-size: 12px;
+}
+
+p.preco{
+  color:red;
+  font-size: 13.5px;
+  margin-top: -12px;
+}
+
+.form-control{
+  margin-bottom: 30px;
+}
+
